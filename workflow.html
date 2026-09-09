@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Workflow | GitHub Team Command Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Team Workflow and Branching</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="setup.html">Git Setup</a>
+                <a href="workflow.html">Team Workflow</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>1. Create a Branch Before Working</h2>
+            <pre><code>git checkout main
+git pull origin main
+git checkout -b feature-your-page</code></pre>
+            <p>Each member creates a separate branch for their assigned page
+               so changes stay isolated until reviewed.</p>
+        </section>
+
+        <section>
+            <h2>2. Commit and Push Changes</h2>
+            <pre><code>git add .
+git commit -m "Add workflow page content"
+git push -u origin feature-your-page</code></pre>
+            <p>This saves the changes locally and uploads the branch to
+               GitHub for the team to see.</p>
+        </section>
+
+        <section>
+            <h2>3. Open a Pull Request</h2>
+            <pre><code>Open a Pull Request on GitHub:
+feature-your-page -> main</code></pre>
+            <p>A teammate reviews the changes before merging the branch into
+               <code>main</code>.</p>
+        </section>
+
+        <section>
+            <h2>4. Update Local Main Branch</h2>
+            <pre><code>git checkout main
+git pull origin main</code></pre>
+            <p>After merging, everyone pulls the updated <code>main</code>
+               branch to stay in sync.</p>
+        </section>
+
+        <section class="note">
+            <h2>Important</h2>
+            <p>Always pull the latest <code>main</code> before creating a new
+               branch to avoid merge conflicts.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>GitHub Team Command Guide - Team Workflow</p>
+    </footer>
+</body>
+</html>
