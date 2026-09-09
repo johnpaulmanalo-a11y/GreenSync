@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>Team Workflow and Branching</h1>
+            <h1>Daily GitHub Team Workflow</h1>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="setup.html">Git Setup</a>
@@ -20,43 +20,34 @@
 
     <main class="container">
         <section>
-            <h2>1. Create a Branch Before Working</h2>
-            <pre><code>git checkout main
-git pull origin main
-git checkout -b feature-your-page</code></pre>
-            <p>Each member creates a separate branch for their assigned page
-               so changes stay isolated until reviewed.</p>
+            <h2>First-Time Download</h2>
+            <pre><code>git clone https://github.com/johnpaulmanalo-a11y/GreenSync.git</code></pre>
         </section>
 
         <section>
-            <h2>2. Commit and Push Changes</h2>
-            <pre><code>git add .
-git commit -m "Add workflow page content"
-git push -u origin feature-your-page</code></pre>
-            <p>This saves the changes locally and uploads the branch to
-               GitHub for the team to see.</p>
-        </section>
-
-        <section>
-            <h2>3. Open a Pull Request</h2>
-            <pre><code>Open a Pull Request on GitHub:
-feature-your-page -> main</code></pre>
-            <p>A teammate reviews the changes before merging the branch into
-               <code>main</code>.</p>
-        </section>
-
-        <section>
-            <h2>4. Update Local Main Branch</h2>
-            <pre><code>git checkout main
-git pull origin main</code></pre>
-            <p>After merging, everyone pulls the updated <code>main</code>
-               branch to stay in sync.</p>
+            <h2>Required Workflow for Every Task</h2>
+            <ol class="workflow-steps">
+                <li><strong>Open main.</strong><pre><code>git switch main</code></pre></li>
+                <li><strong>Get the latest changes.</strong><pre><code>git pull origin main</code></pre></li>
+                <li><strong>Create a feature branch.</strong><pre><code>git switch -c feature-team-workflow</code></pre></li>
+                <li><strong>Edit and test the assigned file in VS Code.</strong></li>
+                <li><strong>Check the branch and files.</strong><pre><code>git branch
+git status</code></pre></li>
+                <li><strong>Review line changes.</strong><pre><code>git diff</code></pre></li>
+                <li><strong>Stage the change.</strong><pre><code>git add .</code></pre></li>
+                <li><strong>Create a meaningful commit.</strong><pre><code>git commit -m "Add assigned page content"</code></pre></li>
+                <li><strong>Push the feature branch.</strong><pre><code>git push -u origin feature-team-workflow</code></pre></li>
+                <li><strong>Create a pull request on GitHub.</strong></li>
+                <li><strong>Ask another member to review before merging.</strong></li>
+                <li><strong>Update local main after the merge.</strong><pre><code>git switch main
+git pull origin main</code></pre></li>
+            </ol>
         </section>
 
         <section class="note">
-            <h2>Important</h2>
-            <p>Always pull the latest <code>main</code> before creating a new
-               branch to avoid merge conflicts.</p>
+            <h2>Team Rule</h2>
+            <p>Pull first, create a branch, edit, review, stage, commit, push,
+               request review, merge, and pull the updated main branch.</p>
         </section>
     </main>
 
