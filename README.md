@@ -17,8 +17,8 @@ Group Members and Contributions
 
 | Member | GitHub Username | Assigned File | Feature Branch | Contribution |
 | John Paul Manalo | johnpaulmanalo-a11y | index.html | feature-homepage | Homepage and group information |
-| Dwayne Justin Panteleon | dwaynejustinpanteleon-cmd | setup.html | feature-setup-guide | Git installation and setup guide |
-| Jet Andreid Ramos | jetandreidramos-netzen | workflow.html | feature-team-workflow | Team collaboration workflow |
+|Jet Andreid De Ramos | jetandreideramos-netzen | setup.html | feature-setup-guide | Git installation and setup guide |
+| Dwayne Justin Pantaleon | dwaynejustinpantaleon-cmd | workflow.html | feature-team-workflow | Team collaboration workflow |
 | Noah Bahilango | noahbahilango | css/style.css | feature-styles | Layout and visual design |
 
 ## Required Team Workflow
